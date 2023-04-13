@@ -1,0 +1,12 @@
+name: Default Environment variables
+
+on: push 
+jobs: 
+   default-env-varibales:
+         runs-on: ubuntu-latest
+        steps:
+          - name: Testing Secrets
+           run: | 
+             echo ""
+          env:
+            DEVOPS:${{secrets.SECRET_TOKEN }}
