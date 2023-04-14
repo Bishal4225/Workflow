@@ -4,9 +4,9 @@ on: push
 jobs: 
    default-env-varibales:
          runs-on: ubuntu-latest
-        steps:
+         steps:
           - name: Testing Secrets
-           run: | 
-             echo "$DEVOPS"
-          env:
+            run: | 
+              echo "$DEVOPS"
+         env:
             DEVOPS: ${{secrets.SECRET_TOKEN }}
